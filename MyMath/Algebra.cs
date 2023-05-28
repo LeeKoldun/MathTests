@@ -53,12 +53,13 @@ namespace MyMath
             return max;
         }
 
-        //public static double ArrayAvg(double[] arr)
-        //{
-        //    for (int i = 0; i < arr.Length; i++)
-        //    {
+        public static double ArrayAvg(double[] arr)
+        {
+            double sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+                sum += arr[i];
 
-        //    }
-        //}
+            return sum / arr.Length;
+        }
     }
 }
